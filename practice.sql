@@ -27,8 +27,10 @@ CREATE TABLE orders (
   	FOREIGN KEY (product_id) REFERENCES products(id)
 )
 
+//How to use Foregin Keys
+FOREIGN KEY (customer_id) REFERENCES customers(id)
 
-//How to use Foreign Keys and Inner Joins
+//How to Inner Joins
 
 SELECT orders.order_number, customers.first_name, customers.last_name, customers.address
 FROM orders
