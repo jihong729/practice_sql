@@ -33,3 +33,11 @@ CREATE TABLE orders (
 SELECT orders.order_number, customers.first_name, customers.last_name, customers.address
 FROM orders
 INNER JOIN customers ON orders.customer_id = customers.id
+
+
+// How to add or delete data in your tables
+ALTER TABLE products
+ADD stock INT
+
+ALTER TABLE products
+DROP stock INT
